@@ -1,5 +1,5 @@
 #Os dicionários organizam a forma como a informação aparece dentro da lista. Antes, em lista, os dados eram encontrados pelo indice: 0, 1, 2...
-#Dicionários são identificados 
+#Dicionários são identificados por "{}"
 
 #print(filme.values()) = retorna todos os valores do dicionário
 #print(filme.keys()) = retorna todas as chaves do dicionário, que são os títulos/classes que dei para cada dado, por exemplo: "nome", "idade", "sexo"...
