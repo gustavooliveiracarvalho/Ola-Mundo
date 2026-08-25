@@ -3,3 +3,11 @@ O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai le
 a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário,
 incluindo o total de gols feitos durante o campeonato.''')
 
+dco = {}
+
+dco['Valores'] = float(input('Digite o valor desejado: '))
+
+if dco['Valores'] % 2 == 0:
+   print(f'O valor {dco["Valores"]} é Par.')
+else:
+   print(f'O valor {dco["Valores"]} é ímpar.')

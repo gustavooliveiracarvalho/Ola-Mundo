@@ -1,0 +1,102 @@
+# Aula de Linguagem Markdown
+
+Estou aprendendo Linguagem **Markdown** no Estudonauta de __Git e GitHub__.
+
+### Formas diferentes de negrito, itálico e riscado
+** = usado para negrito: **teste**
+__ = usado para negrito: __teste__
+'*' = usado para itálico: *teste*
+_ = usado para itálico: _teste_
+
+**Obs:** eu posso misturar essas configurações. Exemplo: "**" + "_" = **negrito** + *itálico*: _**Teste**_
+
+### Como criar uma divisória (linha)
+*** ou ---= criam uma linha
+Teste realizado abaixo:
+
+***
+
+### Como criar títulos
+# Título principal usa: "#".
+## Subtítulo usa: "##".
+### Tópico usa: "###".
+
+***
+
+### Como criar listas numeradas
+1. Teste 
+2. Teste 2
+3. Teste 3
+   1. **Para criar um subitem, basta dar um espaço abaixo do item e ele cria o subitem.**
+
+### Como criar listas demarcadas
+* Aqui posso usar "*" ou "-"
+* Teste
+   *Teste
+* Teste
+
+***
+
+### Como criar listas de tarefas
+- [x] Criar página principal
+- [x] Criar a página da loja
+- [ ] Finalizar a reunião com o cliente
+- [ ] Receber pagamento
+
+**Obs:** quando eu quiser marcar uma atividade como feita, basta colocar um "X" nas chaves, que ele vai aparecer marcado como concluído.
+
+***
+### Como anexar imagens
+Basta clicar no ícone de clip na esquerda que está escrito "**Paste, Drop, or Click to add files**"
+<img width="360" height="360" alt="Image" src="https://github.com/user-attachments/assets/87188877-cafa-4776-a008-3e68e41bc5dd" />
+
+***
+
+### Como criar links
+Basta usar o formato abaixo:
+[Acesse meu GitHub](https://gustavooliveiracarvalho.github.io)
+
+---
+# Como criar tabelas
+Use a estrutura abaixo: use pipe "|", subtração "-" e digite seus dados.
+Num | Nome | Nota
+---|---|---
+1 | Gustavo | 8,5
+2 | José | 10,0
+3 | Matheus | 9,0
+
+*Terminou a tabela!*
+
+---
+
+# Como colocar um comando de alguma linguagem
+Basta usar ``` no começo e no final do código, igual abaixo:
+
+```
+dco = {}
+
+dco['Valores'] = int(input('Digite o valor desejado: '))
+
+if dco['Valores'] % 2 == 0:
+   print(f'O valor {dco["Valores"]} é Par.')
+else:
+   print(f'O valor {dco["Valores"]} é ímpar.')
+``` 
+---
+
+### Como colocar emoji
+Basta você usar ":" que vão aparecer as opções de emoji.
+
+Exemplos:
+Olá, pequeno Gafanhoto 🖖 
+🔫 💵 🍇 
+[Links dos códigos de emoji](https://github.com/ikatyang/emoji-cheat-sheet)
+
+[Links dos códigos de emoji para colocar no título do repositório, Issue etc.](https://emojipedia.org/) - Basta copiar e colar o emoji no campo de texto, porque o uso normal com ":" não funciona nos títulos.
+
+---
+
+### Como faço um reply
+Basta usar o sinal de ">" maior.
+
+> Será que vai chover?
