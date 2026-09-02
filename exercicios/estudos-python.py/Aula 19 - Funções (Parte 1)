@@ -1,0 +1,80 @@
+#Como criar uma função:
+
+def lin():
+    print('-' * 30)
+
+lin()
+print('  CURSO EM VÍDEO  ')
+lin()
+print('  APRENDA PYHTON  ')
+lin()
+print('  GUSTAVO GUANABARA  ')
+lin()
+
+lin()
+#Colocando um parametro na minha função:
+def titulo(txt):
+    print('-' * 30)
+    print(txt)
+    print('-' * 30)
+
+
+titulo('  CURSO EM VÍDEO  ')
+
+titulo('  PYTHON É MUITO BOM  ')
+
+titulo('  Oi  ')
+
+lin()
+#Como usar na pática?
+def soma(a, b):
+    print(f'A = {a} e B = {b}')
+    s = a + b
+    print(f'A soma de A + B = {s}')
+
+#programa principal
+#posso colocar de três formas:
+soma(a=4, b=5)
+#ou
+soma(b=8, a=9)
+#ou
+soma(2, 1)
+
+lin()
+#EMPACOTAMENTO DE PARAMETROS:
+#Usamos enpacotamento para que a função leia uma quantidade variada de dados dentro do parâmetro.
+#Para isso é utilizado o "*", por exemplo: *num - isso significa que eu não sei quantos parâmetros eu vou receber, então, preciso que ele receba quantos eu quiser.
+def contador (*num):
+    for valor in num:
+        print(f'{valor} ', end='')
+    print('FIM!')
+
+
+contador(2, 1, 7)
+contador(8, 0)
+contador(4, 4, 7, 6, 2)
+
+lin()
+#Outro exemplo:
+def contador (*num):
+    tam = len(num)
+    print(f'Recebi os valores {num} e são ao todo {tam} números.')
+
+
+contador(2, 1, 7)
+contador(8, 0)
+contador(4, 4, 7, 6, 2)
+
+lin()
+#Trabalhando com Listas ao invés de Tuplas:
+#Vou fazer uma def que dobre os valores dentro de uma lista. 
+def dobra(lst):
+    pos = 0
+    while pos < len(lst):
+        lst[pos] *= 2
+        pos +=1
+
+
+valores = [6, 3, 9, 1, 0, 2]
+dobra(valores)
+print(valores)
