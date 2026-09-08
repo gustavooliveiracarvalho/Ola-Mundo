@@ -13,4 +13,7 @@ def voto(ano):
         return f'Com {idade} anos: VOTO OPCIONAL.'
     else: 
         return f'Com {idade} anos: VOTO OBRIGATORIO.'
-print(voto(2000))
+
+#Programa Principal
+nsc = int(input('Em que ano você nasceu? '))
+print(voto(nsc))

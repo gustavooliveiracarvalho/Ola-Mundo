@@ -1,0 +1,5 @@
+('''Crie um programa que tenha uma função fatorial() que receba dois parâmetros:
+o primeiro que indique o número a ser calculado e outro chamado show, que
+será um valor lógico (opcional) indicando se sera mostrado ou nao na tela
+o processo de calculo do fatorial.''')
+
