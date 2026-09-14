@@ -1,5 +1,3 @@
-print(x)
-
 #Tratamento de erros e exceções
 #Erro = sintaxe incorreta
 #Exemplo: primt(x), iputint('x')
@@ -14,6 +12,15 @@ print(x)
 #MemoryError
 #etc...
 
+#Estrutura do tratamento de erros:
+#try:
+#    bloco de comandos
+#except:
+#    bloco de comandos
+#else:
+#    bloco de comandos
+#finally:
+#    bloco de comandos
 try:
     a = int(input('Numerador: '))
     b = int(input('Denominador: '))
@@ -24,4 +31,22 @@ else:
     print(f'O resultado é {r:.1f}')
 finally:
     print('Volte sempre! Muito obrigado!')
-    
+
+print('-'*30)
+#Aumentando meu tratamento de erros
+try:
+    a = int(input('Numerador: '))
+    b = int(input('Denominador: '))
+    r = a / b
+except (ValueError, TypeError):
+    print('Tivemos um problema com os tipos de dados que vocês digitou.')
+except ZeroDivisionError:
+    print('Não é possível dividir um número por zero!')
+except KeyboardInterrupt:
+    print('O usuário preferiu parar o programa!')
+except Exception as erro:
+    print(f'O erro encontrado foi: {erro.__cause__}')
+else:
+    print(f'O resultado é {r:.1f}')
+finally:
+    print('Volte sempre! Muito obrigado!')

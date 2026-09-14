@@ -1,0 +1,9 @@
+import urllib
+import urllib.request
+
+try:
+    site = urllib.request.urlopen('https://www.youtube.com/')
+except urllib.error.URLError:
+    print(f'O site {site} não está acessível no momento.')
+else:
+    print(f'Consegui acessar o site {site} com sucesso!')
